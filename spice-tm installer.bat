@@ -38,7 +38,7 @@ echo.
 echo [38;5;202m//[0mDownloading[38;5;202m//[0m
 echo [38;5;208m33%%[0m
 powershell.exe -command "(New-Object System.Net.WebClient).DownloadFile('https://raw.githubusercontent.com/baikil/spice-tm/main/spice-tm.bat','%public%\spice-tm\spice-tm.bat')"
-powershell.exe -command "(New-Object System.Net.WebClient).DownloadFile('https://raw.githubusercontent.com/baikil/animetake/main/spice-tm.ico','%public%\spice-tm\spice-tm.ico')"
+powershell.exe -command "(New-Object System.Net.WebClient).DownloadFile('https://raw.githubusercontent.com/baikil/spice-tm/main/spice-tm.ico','%public%\spice-tm\spice-tm.ico')"
 title Spice-tm installer - Installing... [66%]
 %logo%
 echo.
@@ -95,5 +95,5 @@ echo.
 echo [38;5;202m//[0mGoodbye[38;5;202m//[0m
 echo.
 timeout /t 2 >nul
-if "%startapp%" == "true" (start %public%\animetake\Animetake.bat)
+if "%startapp%" == "true" (start %public%\spice-tm\spice-tm.bat)
 exit
