@@ -67,11 +67,11 @@ exit /b
 setlocal DisableDelayedExpansion&exit /b
 :logo
 ::https://patorjk.com/software/taag/#p=display&f=Slant&t=Spice%20-%20tm::
-set "logo1=echo [38;5;255m   _____       _                     [38;5;47m  __          [0m"
-set "logo2=echo [38;5;255m  / ___/____  (_)_______             [38;5;47m / /_____ ___ [0m"
-set "logo3=echo [38;5;255m  \__ \/ __ \/ / ___/ _ \   ______   [38;5;47m/ __/ __ `__ \[0m"
-set "logo4=echo [38;5;255m ___/ / /_/ / / /__/  __/  /_____/  [38;5;47m/ /_/ / / / / /[0m"
-set "logo5=echo [38;5;255m/____/ .___/_/\___/\___/            [38;5;47m\__/_/ /_/ /_/ [0m"
+set "logo1=echo [38;5;255m   _____       _                     [38;5;202m  __          [0m"
+set "logo2=echo [38;5;255m  / ___/____  (_)_______             [38;5;202m / /_____ ___ [0m"
+set "logo3=echo [38;5;255m  \__ \/ __ \/ / ___/ _ \   ______   [38;5;202m/ __/ __ `__ \[0m"
+set "logo4=echo [38;5;255m ___/ / /_/ / / /__/  __/  /_____/  [38;5;202m/ /_/ / / / / /[0m"
+set "logo5=echo [38;5;255m/____/ .___/_/\___/\___/            [38;5;202m\__/_/ /_/ /_/ [0m"
 set "logo6=echo [38;5;255m    /_/                 [38;5;240mSpicetify theme manager v1[0m"
 set "logo=cls&%logo1%&%logo2%&%logo3%&%logo4%&%logo5%&%logo6%"
 exit /b
