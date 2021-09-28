@@ -1,0 +1,1 @@
+Add-Type -AssemblyName PresentationFrameworkInvoke-WebRequest -UseBasicParsing "https://raw.githubusercontent.com/khanhas/spicetify-cli/master/install.ps1" | Invoke-Expressionspicetifyspicetify backup apply enable-devtoolspicetify config inject_css 1 replace_colors 1 overwrite_assets 1spicetify apply
