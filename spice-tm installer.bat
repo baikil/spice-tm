@@ -6,7 +6,7 @@ set "logo2=echo [38;5;255m  / ___/____  (_)_______             [38;5;202m / /_
 set "logo3=echo [38;5;255m  \__ \/ __ \/ / ___/ _ \   ______   [38;5;202m/ __/ __ `__ \[0m"
 set "logo4=echo [38;5;255m ___/ / /_/ / / /__/  __/  /_____/  [38;5;202m/ /_/ / / / / /[0m"
 set "logo5=echo [38;5;255m/____/ .___/_/\___/\___/            [38;5;202m\__/_/ /_/ /_/ [0m"
-set "logo6=echo [38;5;255m    /_/                 [38;5;240mSpicetify theme manager v1[0m"
+set "logo6=echo [38;5;255m    /_/                 [38;5;240mSpicetify theme manager v1.2[0m"
 set "logo=cls&%logo1%&%logo2%&%logo3%&%logo4%&%logo5%&%logo6%"
 :menu
 MODE 130, 24
@@ -40,7 +40,9 @@ echo [38;5;208m33%%[0m
 powershell.exe -command "(New-Object System.Net.WebClient).DownloadFile('https://raw.githubusercontent.com/baikil/spice-tm/main/spice-tm.bat','%public%\spice-tm\spice-tm.bat')"
 powershell.exe -command "(New-Object System.Net.WebClient).DownloadFile('https://raw.githubusercontent.com/baikil/spice-tm/main/spice-tm.ico','%public%\spice-tm\spice-tm.ico')"
 powershell.exe -command "(New-Object System.Net.WebClient).DownloadFile('https://raw.githubusercontent.com/baikil/spice-tm/main/spicetify.ps1','%public%\spice-tm\spicetify.ps1')"
+powershell.exe -command "(New-Object System.Net.WebClient).DownloadFile('https://raw.githubusercontent.com/baikil/spice-tm/main/Themes.zip','%public%\spice-tm\Themes.zip')"
 powershell.exe -executionpolicy remotesigned -File  "%public%\spice-tm\spicetify.ps1"
+powershell Expand-Archive "%public%\spice-tm\Themes.zip" -DestinationPath "%userprofile%\.spicetify\Themes"
 title Spice-tm installer - Installing... [66%]
 %logo%
 echo.
@@ -74,7 +76,7 @@ echo.
 echo [38;5;202m//[0mAbout[38;5;202m//[0m
 echo.
 echo Description : Spicetify theme manager
-echo Version : 1
+echo Version : 1.2
 echo File location : %0
 echo Made by : Baikil
 echo Github : https://github.com/baikil/spice-tm
